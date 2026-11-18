@@ -1,0 +1,191 @@
+{
+  "schema": "tools.camera-geometry.v1",
+  "robot_profile": "robodojo",
+  "eef_frame": "environment_origin",
+  "eef_link": "link6",
+  "camera_convention": "USD: +x right, +y up, -z forward",
+  "intrinsics_convention": "archived original R explicit horizontal/vertical aperture formulas, no recalibration",
+  "applicability": "Fixed unrandomized stack_bowls/layout0 X5 public camera/profile/URDF versions only; native 640x480 RGB; current measured EEF; caller establishes visual correspondences. No TCP/contact/object-ground-truth claim.",
+  "head_to_environment_usd": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.8660254037844387,
+      -0.49999999999999994,
+      -0.41
+    ],
+    [
+      0.0,
+      0.49999999999999994,
+      0.8660254037844387,
+      1.308
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eef_to_wrist_usd": [
+    [
+      -7.346410206780239e-06,
+      0.5000295741170634,
+      -0.8660083284555282,
+      0.08484205223250312
+    ],
+    [
+      -0.9999999999730149,
+      -3.673422367022093e-06,
+      6.362052423592802e-06,
+      -2.0453913670032604e-07
+    ],
+    [
+      1.2331325483102713e-16,
+      0.8660083284788973,
+      0.5000295741305566,
+      0.0509396809403865
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cameras": {
+    "cam_high": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          288.13254096884566,
+          0,
+          320.0
+        ],
+        [
+          0,
+          336.46432076265245,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "cam_left_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          397.04127893104277,
+          0,
+          320.0
+        ],
+        [
+          0,
+          397.0412789310427,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "cam_right_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          397.04127893104277,
+          0,
+          320.0
+        ],
+        [
+          0,
+          397.0412789310427,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "config_id": "robodojo-x5-stack-bowls-layout0-nominal-v1",
+  "length_unit": "m",
+  "quaternion_order": "wxyz",
+  "projection_model": "pinhole_no_distortion",
+  "validated_task_layouts": {
+    "stack_bowls": [
+      0
+    ]
+  },
+  "provenance": {
+    "status": "nominal_public_geometry",
+    "sources": [
+      {
+        "path": "research/stack-bowls-r-three-content/geometry-config.json",
+        "sha256": "db61493e47d34f933ec4ea344f208ea4c2618c31c18bf90e5c3325d653585b30"
+      },
+      {
+        "path": "research/stack-bowls-r-three-content/geometry.py",
+        "sha256": "42a639d5f52fbcdb5023d3b5db511c92dfa163dd282b7e84308556fbaf9b5bac"
+      },
+      {
+        "path": "research/stack-bowls-r-three-content/PROGRAM_PROVENANCE.json",
+        "sha256": "9e215a76c932d92b0bd98b69f86db246269de4903173e7765cdc5d4130ab17b0"
+      },
+      {
+        "path": "external/RoboDojo/Assets/Robots/x5/X5A.urdf",
+        "sha256": "7aaa308a1a5b6a213d914db86ba09ddd6252f25cb498ac9a148bfa6c7166a423"
+      },
+      {
+        "path": "external/RoboDojo/Assets/Robots/x5/robot_config.yml",
+        "sha256": "9de4f63b84c0f730623c09af7a2d530d84973981397280b6e4b626b50ba6f1c9"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/camera/template.py",
+        "sha256": "68287ed1daec3b8ed7f053bf97a4d48bbddeb8b5757b53e438ac3c4240a9e61b"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/camera/camera_config.yml",
+        "sha256": "c1752170da855e735beba27fddbf78dad16f2395e4ef8b24e9827a768e616a62"
+      },
+      {
+        "path": "external/RoboDojo/env/camera_manager/camera_manager.py",
+        "sha256": "1a4250cb3bdc7305fe362a7c6b113f57e6f3e9e4983b69bd61e2c84e8e995471"
+      },
+      {
+        "path": "external/RoboDojo/utils/rotations.py",
+        "sha256": "8e814f79938bdb9e85f1c024825617cc08d281b61728c6410b23ef1bd852c340"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/robodojo_server/gpt_only_client.py",
+        "sha256": "11484ca34bb27c073dc2f10aa2336d37ff64738c9049a3d9c6e86ed600b122d3"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/skill/image_preview.py",
+        "sha256": "32cc6e609d018b252a56ea105d12fab6837acc1e78111e127b55d27c9b17fb13"
+      }
+    ],
+    "note": "Exact numeric extraction from frozen R3C1 configuration; not physical calibration verified. Public source paths and hashes are historical declarations copied from its provenance. Original dual-aperture formulas are preserved; source files are not read at runtime."
+  }
+}

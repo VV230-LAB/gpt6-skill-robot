@@ -1,0 +1,142 @@
+{
+  "schema": "tools.camera-geometry.v1",
+  "robot_profile": null,
+  "eef_frame": null,
+  "eef_link": null,
+  "camera_convention": null,
+  "intrinsics_convention": null,
+  "applicability": null,
+  "head_to_environment_usd": [
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "eef_to_wrist_usd": [
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "cameras": {
+    "cam_high": {
+      "resolution": [
+        null,
+        null
+      ],
+      "K": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "cam_left_wrist": {
+      "resolution": [
+        null,
+        null
+      ],
+      "K": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "cam_right_wrist": {
+      "resolution": [
+        null,
+        null
+      ],
+      "K": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "config_id": "template-unconfigured",
+  "length_unit": "m",
+  "quaternion_order": "wxyz",
+  "projection_model": "pinhole_no_distortion",
+  "validated_task_layouts": {},
+  "provenance": {
+    "status": "incomplete",
+    "sources": [],
+    "note": "Supply applicable versioned public geometry and source SHA256 declarations. Unknown calibration parameters remain null; no nominal numerical defaults are supplied."
+  }
+}

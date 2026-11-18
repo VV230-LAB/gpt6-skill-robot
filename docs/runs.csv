@@ -1,0 +1,21 @@
+study,run,task,layout,model,effort,requested_tier,method,outcome,reported_tokens,wall_seconds,timing_scope,outer_action_requests,actual_acks,program_acks,note
+OBJ2,A,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R,native_success,14368270,1780.326,episode_process,90,449,0,contemporaneous A/B
+OBJ2,B,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+OBJ2,native_success,6402359,919.164,episode_process,37,374,239,contemporaneous A/B
+EPR1,R1,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC1,native_success,3550520,658.200,episode_process,25,419,403,joint gate pass
+EPR1,R2,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC1,native_success,3575814,633.193,episode_process,26,431,411,joint gate pass
+EPR1,R3,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC1,native_success,3707618,627.210,episode_process,25,427,407,joint gate pass
+EPR1,V1,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC1,native_success,6388547,983.250,episode_process,40,611,548,joint gate failed on time
+EPR1,V2,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC1,native_success,3892354,713.214,episode_process,27,459,441,joint gate pass
+R-SX-FAST,R,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R,native_success,7722160,1059.20,episode_process,,263,0,53 executed decisions
+C2-SX-FAST,C2,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+C2,native_success,4205585,1005.19,episode_process,,198,0,40 executed decisions and 2 handoffs
+R-SX-STD1,STD1,stack_bowls,0,gpt-6.1-sol,xhigh,default,R,native_success,14928729,1336.19,episode_process,,439,0,88 executed decisions
+R-SX-STD2,STD2,stack_bowls,0,gpt-6.1-sol,xhigh,default,R,native_success,8225937,1085.178,episode_process,,251,0,51 executed decisions and 1 rejected proposal
+MPE1,N1,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC+C2,native_success,6289039,1277.299,episode_process,44,750,725,3 handoffs with subsequent ACK
+MPE1,N2,stack_bowls,0,gpt-6.1-sol,xhigh,priority,R+EPC+C2,native_success,3733049,927.260,episode_process,34,607,574,1 handoff with subsequent ACK
+EPC-BLK1,A1,stack_blocks,0,gpt-6.1-sol,xhigh,priority,R,native_success,11924338,948.218,episode_process,60,297,0,contemporaneous A/B
+EPC-BLK1,B1,stack_blocks,0,gpt-6.1-sol,xhigh,priority,R+EPC,native_success,4132782,873.265,episode_process,22,266,246,contemporaneous A/B
+R-SX-STD-BLOCKS1,R,stack_blocks,0,gpt-6.1-sol,xhigh,default,R,native_success,6246364,725.122,episode_process,,239,0,48 executed decisions
+CORE2,F1,stack_blocks,0,gpt-6.1-sol,xhigh,default,R+EPC-CORE2,native_success,3429386,722.248,episode_process,23,247,232,historical R comparison
+CORE2,G1,swap_blocks,0,gpt-6.1-sol,xhigh,default,R+EPC-CORE2,incomplete_authorization_budget,9285207,1427.359,episode_process,64,633,538,transfer attempt
+CLS1,A1,classify_objects,0,gpt-6.1-sol,xhigh,default,R,incomplete_token_reserve,23157619,2471.811,launcher,123,605,0,121 executed requests and 2 zero-ACK refusals
+CLS1,B1,classify_objects,0,gpt-6.1-sol,xhigh,default,R+CORE2-move-home,incomplete_controller_error,10378275,1897.816,launcher,61,798,698,last request had zero ACK and host error

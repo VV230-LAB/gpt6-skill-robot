@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+auth.json
+credentials.json
+local/
+external/
+logs/
+outputs/
+checkpoints/
+*.mp4
+*.safetensors

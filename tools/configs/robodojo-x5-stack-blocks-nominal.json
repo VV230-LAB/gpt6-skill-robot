@@ -1,0 +1,211 @@
+{
+  "schema": "tools.camera-geometry.v1",
+  "robot_profile": "robodojo",
+  "eef_frame": "environment_origin",
+  "eef_link": "link6",
+  "camera_convention": "USD: +x right, +y up, -z forward",
+  "intrinsics_convention": "archived original R explicit horizontal/vertical aperture formulas, no recalibration",
+  "applicability": "Public static nominal geometry scope extension for unrandomized native stack_blocks/layout0, eval group 0, dual X5, environment_origin/link6 and current 640x480 RGB/EEF. Numeric camera parameters are unchanged from the archived bowls tools configuration and reconstructed from current public sources. Physical calibration, TCP/contact offsets, object correspondence and task operation effect are NOT VERIFIED. No object coordinates, scene plane or grasp height supplied. This configuration does not modify native dynamics.",
+  "head_to_environment_usd": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.8660254037844387,
+      -0.49999999999999994,
+      -0.41
+    ],
+    [
+      0.0,
+      0.49999999999999994,
+      0.8660254037844387,
+      1.308
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eef_to_wrist_usd": [
+    [
+      -7.346410206780239e-06,
+      0.5000295741170634,
+      -0.8660083284555282,
+      0.08484205223250312
+    ],
+    [
+      -0.9999999999730149,
+      -3.673422367022093e-06,
+      6.362052423592802e-06,
+      -2.0453913670032604e-07
+    ],
+    [
+      1.2331325483102713e-16,
+      0.8660083284788973,
+      0.5000295741305566,
+      0.0509396809403865
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cameras": {
+    "cam_high": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          288.13254096884566,
+          0,
+          320.0
+        ],
+        [
+          0,
+          336.46432076265245,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "cam_left_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          397.04127893104277,
+          0,
+          320.0
+        ],
+        [
+          0,
+          397.0412789310427,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "cam_right_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "K": [
+        [
+          397.04127893104277,
+          0,
+          320.0
+        ],
+        [
+          0,
+          397.0412789310427,
+          240.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "config_id": "robodojo-x5-stack-blocks-layout0-nominal-v1",
+  "length_unit": "m",
+  "quaternion_order": "wxyz",
+  "projection_model": "pinhole_no_distortion",
+  "validated_task_layouts": {
+    "stack_blocks": [
+      0
+    ]
+  },
+  "provenance": {
+    "status": "nominal_public_geometry",
+    "sources": [
+      {
+        "path": "tools/configs/robodojo-x5-nominal.json",
+        "sha256": "0d398267e3393447c969eafcc5477714cddfcc9d79fee510676622002c3e089a"
+      },
+      {
+        "path": "external/RoboDojo/Assets/Robots/x5/X5A.urdf",
+        "sha256": "7aaa308a1a5b6a213d914db86ba09ddd6252f25cb498ac9a148bfa6c7166a423"
+      },
+      {
+        "path": "external/RoboDojo/Assets/Robots/x5/robot_config.yml",
+        "sha256": "9de4f63b84c0f730623c09af7a2d530d84973981397280b6e4b626b50ba6f1c9"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/camera/template.py",
+        "sha256": "68287ed1daec3b8ed7f053bf97a4d48bbddeb8b5757b53e438ac3c4240a9e61b"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/camera/camera_config.yml",
+        "sha256": "c1752170da855e735beba27fddbf78dad16f2395e4ef8b24e9827a768e616a62"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/arx_x5.yml",
+        "sha256": "7691350159fdeca92fd1b0b2da36913464ccdea3f3251eefb0176aa51db0807f"
+      },
+      {
+        "path": "external/RoboDojo/env_cfg/robot/dual_x5.yml",
+        "sha256": "4eefaccc75c5f83443b7bb85ef1de68ee7a3772e27af2b04a5e8d8769ab9baa1"
+      },
+      {
+        "path": "external/RoboDojo/task/RoboDojo/config/_task.yml",
+        "sha256": "655a87cd59fa6272bf352d32deb8ade162737b49a9824e16d428fecf0803380b"
+      },
+      {
+        "path": "external/RoboDojo/utils/pipeline_utils.py",
+        "sha256": "d5d8da29e6ca84ab04323a2f79130f930572785b4399634e06a42834ed4087ae"
+      },
+      {
+        "path": "external/RoboDojo/env/robot_manager/robot_manager.py",
+        "sha256": "1306cb6d17b58a04ad8fc298edb6eb9122469048dbc9717dcf246f4f985d9974"
+      },
+      {
+        "path": "external/RoboDojo/env/camera_manager/camera_manager.py",
+        "sha256": "1a4250cb3bdc7305fe362a7c6b113f57e6f3e9e4983b69bd61e2c84e8e995471"
+      },
+      {
+        "path": "external/RoboDojo/utils/rotations.py",
+        "sha256": "8e814f79938bdb9e85f1c024825617cc08d281b61728c6410b23ef1bd852c340"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/robodojo_server/server.py",
+        "sha256": "532dd84466aa8c7c91e0e215d0ff96b9b53bb27c4beea20a99a10eaac2b9d435"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/robodojo_server/session.py",
+        "sha256": "b359ed9e3ab6b6f092f89420bf0a18356180372e7f3f7079e0d5638699e3d015"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/robodojo_server/gpt_only_client.py",
+        "sha256": "11484ca34bb27c073dc2f10aa2336d37ff64738c9049a3d9c6e86ed600b122d3"
+      },
+      {
+        "path": "external/GPT-as-Policy/hybrid_rollout/robodojo/skill/image_preview.py",
+        "sha256": "32cc6e609d018b252a56ea105d12fab6837acc1e78111e127b55d27c9b17fb13"
+      }
+    ],
+    "note": "Independent stack_blocks/layout0 declaration supported by current public task index selecting the same camera_config/dual_x5/default sources. The validated_task_layouts key declares supported nominal configuration scope; it does not certify physical calibration or task success. All fixed numeric geometry remains byte-for-byte JSON-value equivalent to tools/configs/robodojo-x5-nominal.json. Blocks uses native datagen configuration; no bowls teleop PhysX stabilization setting is copied. Public head/URDF-mounted wrist transforms and dual-aperture intrinsics are CPU-reconstructed in researcher-side config_check.py; source files are not authenticated at tool runtime. Native camera accessor uses equal fx/fy while this preserved historical formula uses both apertures. No historical object/pixel/action values are included."
+  }
+}
